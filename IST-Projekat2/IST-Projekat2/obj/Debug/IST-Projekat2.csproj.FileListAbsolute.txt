@@ -1,0 +1,7 @@
+C:\Users\Aleksandar\source\repos\IST-Projekat2\IST-Projekat2\obj\Debug\IST-Projekat2.csprojAssemblyReference.cache
+C:\Users\Aleksandar\source\repos\IST-Projekat2\IST-Projekat2\obj\Debug\IST-Projekat2.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\source\repos\IST-Projekat2\IST-Projekat2\bin\Debug\IST-Projekat2.dll.config
+C:\Users\Aleksandar\source\repos\IST-Projekat2\IST-Projekat2\bin\Debug\IST-Projekat2.dll
+C:\Users\Aleksandar\source\repos\IST-Projekat2\IST-Projekat2\bin\Debug\IST-Projekat2.pdb
+C:\Users\Aleksandar\source\repos\IST-Projekat2\IST-Projekat2\obj\Debug\IST-Projekat2.dll
+C:\Users\Aleksandar\source\repos\IST-Projekat2\IST-Projekat2\obj\Debug\IST-Projekat2.pdb

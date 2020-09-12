@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/IST_Projekat2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_vratiKnjige_InputMessage">
+    <wsdl:part name="parameters" element="tns:vratiKnjige" />
+  </wsdl:message>
+  <wsdl:message name="IService1_vratiKnjige_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vratiKnjigeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_vratiKnjigu_InputMessage">
+    <wsdl:part name="parameters" element="tns:vratiKnjigu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_vratiKnjigu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vratiKnjiguResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_poruciKnjigu_InputMessage">
+    <wsdl:part name="parameters" element="tns:poruciKnjigu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_poruciKnjigu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:poruciKnjiguResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_login_InputMessage">
+    <wsdl:part name="parameters" element="tns:login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_dodajKnjigu_InputMessage">
+    <wsdl:part name="parameters" element="tns:dodajKnjigu" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_dodajKnjigu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dodajKnjiguResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_izmeniKnjigu_InputMessage">
+    <wsdl:part name="parameters" element="tns:izmeniKnjigu" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_izmeniKnjigu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:izmeniKnjiguResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_dodajKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:dodajKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_dodajKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dodajKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_vratiKorisnike_InputMessage">
+    <wsdl:part name="parameters" element="tns:vratiKorisnike" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_vratiKorisnike_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vratiKorisnikeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_izmeniKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:izmeniKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_izmeniKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:izmeniKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_vratiKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:vratiKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_vratiKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vratiKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_vratiPorudzbine_InputMessage">
+    <wsdl:part name="parameters" element="tns:vratiPorudzbine" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_vratiPorudzbine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vratiPorudzbineResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_vratiPorudzbinu_InputMessage">
+    <wsdl:part name="parameters" element="tns:vratiPorudzbinu" />
+  </wsdl:message>
+  <wsdl:message name="IServiceOperater_vratiPorudzbinu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vratiPorudzbinuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAdministrator_obrisiKnjigu_InputMessage">
+    <wsdl:part name="parameters" element="tns:obrisiKnjigu" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAdministrator_obrisiKnjigu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obrisiKnjiguResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAdministrator_obrisiKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:obrisiKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAdministrator_obrisiKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obrisiKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAdministrator_obrisiPorudzbinu_InputMessage">
+    <wsdl:part name="parameters" element="tns:obrisiPorudzbinu" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAdministrator_obrisiPorudzbinu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obrisiPorudzbinuResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="vratiKnjige">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/vratiKnjige" message="tns:IService1_vratiKnjige_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/vratiKnjigeResponse" message="tns:IService1_vratiKnjige_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vratiKnjigu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/vratiKnjigu" message="tns:IService1_vratiKnjigu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/vratiKnjiguResponse" message="tns:IService1_vratiKnjigu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="poruciKnjigu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/poruciKnjigu" message="tns:IService1_poruciKnjigu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/poruciKnjiguResponse" message="tns:IService1_poruciKnjigu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/login" message="tns:IService1_login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/loginResponse" message="tns:IService1_login_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IServiceOperater">
+    <wsdl:operation name="vratiKnjige">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/vratiKnjige" message="tns:IService1_vratiKnjige_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/vratiKnjigeResponse" message="tns:IService1_vratiKnjige_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vratiKnjigu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/vratiKnjigu" message="tns:IService1_vratiKnjigu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/vratiKnjiguResponse" message="tns:IService1_vratiKnjigu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="poruciKnjigu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/poruciKnjigu" message="tns:IService1_poruciKnjigu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/poruciKnjiguResponse" message="tns:IService1_poruciKnjigu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/login" message="tns:IService1_login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/loginResponse" message="tns:IService1_login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dodajKnjigu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/dodajKnjigu" message="tns:IServiceOperater_dodajKnjigu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/dodajKnjiguResponse" message="tns:IServiceOperater_dodajKnjigu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="izmeniKnjigu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/izmeniKnjigu" message="tns:IServiceOperater_izmeniKnjigu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/izmeniKnjiguResponse" message="tns:IServiceOperater_izmeniKnjigu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dodajKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/dodajKorisnika" message="tns:IServiceOperater_dodajKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/dodajKorisnikaResponse" message="tns:IServiceOperater_dodajKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vratiKorisnike">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/vratiKorisnike" message="tns:IServiceOperater_vratiKorisnike_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/vratiKorisnikeResponse" message="tns:IServiceOperater_vratiKorisnike_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="izmeniKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/izmeniKorisnika" message="tns:IServiceOperater_izmeniKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/izmeniKorisnikaResponse" message="tns:IServiceOperater_izmeniKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vratiKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/vratiKorisnika" message="tns:IServiceOperater_vratiKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/vratiKorisnikaResponse" message="tns:IServiceOperater_vratiKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vratiPorudzbine">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/vratiPorudzbine" message="tns:IServiceOperater_vratiPorudzbine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/vratiPorudzbineResponse" message="tns:IServiceOperater_vratiPorudzbine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vratiPorudzbinu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/vratiPorudzbinu" message="tns:IServiceOperater_vratiPorudzbinu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/vratiPorudzbinuResponse" message="tns:IServiceOperater_vratiPorudzbinu_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IServiceAdministrator">
+    <wsdl:operation name="vratiKnjige">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/vratiKnjige" message="tns:IService1_vratiKnjige_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/vratiKnjigeResponse" message="tns:IService1_vratiKnjige_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vratiKnjigu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/vratiKnjigu" message="tns:IService1_vratiKnjigu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/vratiKnjiguResponse" message="tns:IService1_vratiKnjigu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="poruciKnjigu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/poruciKnjigu" message="tns:IService1_poruciKnjigu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/poruciKnjiguResponse" message="tns:IService1_poruciKnjigu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/login" message="tns:IService1_login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/loginResponse" message="tns:IService1_login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dodajKnjigu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/dodajKnjigu" message="tns:IServiceOperater_dodajKnjigu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/dodajKnjiguResponse" message="tns:IServiceOperater_dodajKnjigu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="izmeniKnjigu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/izmeniKnjigu" message="tns:IServiceOperater_izmeniKnjigu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/izmeniKnjiguResponse" message="tns:IServiceOperater_izmeniKnjigu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dodajKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/dodajKorisnika" message="tns:IServiceOperater_dodajKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/dodajKorisnikaResponse" message="tns:IServiceOperater_dodajKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vratiKorisnike">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/vratiKorisnike" message="tns:IServiceOperater_vratiKorisnike_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/vratiKorisnikeResponse" message="tns:IServiceOperater_vratiKorisnike_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="izmeniKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/izmeniKorisnika" message="tns:IServiceOperater_izmeniKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/izmeniKorisnikaResponse" message="tns:IServiceOperater_izmeniKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vratiKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/vratiKorisnika" message="tns:IServiceOperater_vratiKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/vratiKorisnikaResponse" message="tns:IServiceOperater_vratiKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vratiPorudzbine">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/vratiPorudzbine" message="tns:IServiceOperater_vratiPorudzbine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/vratiPorudzbineResponse" message="tns:IServiceOperater_vratiPorudzbine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vratiPorudzbinu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceOperater/vratiPorudzbinu" message="tns:IServiceOperater_vratiPorudzbinu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceOperater/vratiPorudzbinuResponse" message="tns:IServiceOperater_vratiPorudzbinu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obrisiKnjigu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAdministrator/obrisiKnjigu" message="tns:IServiceAdministrator_obrisiKnjigu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAdministrator/obrisiKnjiguResponse" message="tns:IServiceAdministrator_obrisiKnjigu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obrisiKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAdministrator/obrisiKorisnika" message="tns:IServiceAdministrator_obrisiKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAdministrator/obrisiKorisnikaResponse" message="tns:IServiceAdministrator_obrisiKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obrisiPorudzbinu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAdministrator/obrisiPorudzbinu" message="tns:IServiceAdministrator_obrisiPorudzbinu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAdministrator/obrisiPorudzbinuResponse" message="tns:IServiceAdministrator_obrisiPorudzbinu_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="vratiKnjige">
+      <soap:operation soapAction="http://tempuri.org/IService1/vratiKnjige" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vratiKnjigu">
+      <soap:operation soapAction="http://tempuri.org/IService1/vratiKnjigu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="poruciKnjigu">
+      <soap:operation soapAction="http://tempuri.org/IService1/poruciKnjigu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <soap:operation soapAction="http://tempuri.org/IService1/login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IServiceOperater" type="tns:IServiceOperater">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="vratiKnjige">
+      <soap:operation soapAction="http://tempuri.org/IService1/vratiKnjige" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vratiKnjigu">
+      <soap:operation soapAction="http://tempuri.org/IService1/vratiKnjigu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="poruciKnjigu">
+      <soap:operation soapAction="http://tempuri.org/IService1/poruciKnjigu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <soap:operation soapAction="http://tempuri.org/IService1/login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dodajKnjigu">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/dodajKnjigu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="izmeniKnjigu">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/izmeniKnjigu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dodajKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/dodajKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vratiKorisnike">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/vratiKorisnike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="izmeniKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/izmeniKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vratiKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/vratiKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vratiPorudzbine">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/vratiPorudzbine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vratiPorudzbinu">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/vratiPorudzbinu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IServiceAdministrator" type="tns:IServiceAdministrator">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="vratiKnjige">
+      <soap:operation soapAction="http://tempuri.org/IService1/vratiKnjige" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vratiKnjigu">
+      <soap:operation soapAction="http://tempuri.org/IService1/vratiKnjigu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="poruciKnjigu">
+      <soap:operation soapAction="http://tempuri.org/IService1/poruciKnjigu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <soap:operation soapAction="http://tempuri.org/IService1/login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dodajKnjigu">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/dodajKnjigu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="izmeniKnjigu">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/izmeniKnjigu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dodajKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/dodajKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vratiKorisnike">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/vratiKorisnike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="izmeniKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/izmeniKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vratiKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/vratiKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vratiPorudzbine">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/vratiPorudzbine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vratiPorudzbinu">
+      <soap:operation soapAction="http://tempuri.org/IServiceOperater/vratiPorudzbinu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obrisiKnjigu">
+      <soap:operation soapAction="http://tempuri.org/IServiceAdministrator/obrisiKnjigu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obrisiKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IServiceAdministrator/obrisiKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obrisiPorudzbinu">
+      <soap:operation soapAction="http://tempuri.org/IServiceAdministrator/obrisiPorudzbinu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/IST_Projekat2/Service1/" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IServiceOperater" binding="tns:BasicHttpBinding_IServiceOperater">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/IST_Projekat2/Service1/Operater" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IServiceAdministrator" binding="tns:BasicHttpBinding_IServiceAdministrator">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/IST_Projekat2/Service1/Administrator" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

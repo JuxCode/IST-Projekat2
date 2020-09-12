@@ -1,0 +1,11 @@
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Klijent\obj\Debug\Klijent.csprojAssemblyReference.cache
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Klijent\obj\Debug\Klijent.LoginForm.resources
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Klijent\obj\Debug\Klijent.Properties.Resources.resources
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Klijent\obj\Debug\Klijent.csproj.GenerateResource.cache
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Klijent\obj\Debug\Klijent.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Klijent\bin\Debug\Klijent.exe.config
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Klijent\bin\Debug\Klijent.exe
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Klijent\bin\Debug\Klijent.pdb
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Klijent\obj\Debug\Klijent.exe
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Klijent\obj\Debug\Klijent.pdb
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Klijent\obj\Debug\Klijent.Form1.resources

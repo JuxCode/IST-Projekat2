@@ -1,0 +1,11 @@
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Operater\bin\Debug\Operater.exe.config
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Operater\bin\Debug\Operater.exe
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Operater\bin\Debug\Operater.pdb
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Operater\obj\Debug\Operater.csprojAssemblyReference.cache
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Operater\obj\Debug\Operater.Properties.Resources.resources
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Operater\obj\Debug\Operater.csproj.GenerateResource.cache
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Operater\obj\Debug\Operater.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Operater\obj\Debug\Operater.exe
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Operater\obj\Debug\Operater.pdb
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Operater\obj\Debug\Operater.Form1.resources
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Operater\obj\Debug\Operater.LoginForm.resources

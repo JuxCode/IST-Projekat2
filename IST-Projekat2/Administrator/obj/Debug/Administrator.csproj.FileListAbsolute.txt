@@ -1,0 +1,11 @@
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Administrator\bin\Debug\Administrator.exe.config
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Administrator\bin\Debug\Administrator.exe
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Administrator\bin\Debug\Administrator.pdb
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Administrator\obj\Debug\Administrator.csprojAssemblyReference.cache
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Administrator\obj\Debug\Administrator.Form1.resources
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Administrator\obj\Debug\Administrator.LoginForm.resources
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Administrator\obj\Debug\Administrator.Properties.Resources.resources
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Administrator\obj\Debug\Administrator.csproj.GenerateResource.cache
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Administrator\obj\Debug\Administrator.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Administrator\obj\Debug\Administrator.exe
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Administrator\obj\Debug\Administrator.pdb

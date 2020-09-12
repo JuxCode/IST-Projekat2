@@ -1,0 +1,11 @@
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Host\bin\Debug\Host.exe.config
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Host\bin\Debug\Host.exe
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Host\bin\Debug\Host.pdb
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Host\bin\Debug\IST-Projekat2.dll
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Host\bin\Debug\IST-Projekat2.pdb
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Host\bin\Debug\IST-Projekat2.dll.config
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Host\obj\Debug\Host.csprojAssemblyReference.cache
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Host\obj\Debug\Host.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Host\obj\Debug\Host.csproj.CopyComplete
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Host\obj\Debug\Host.exe
+C:\Users\Aleksandar\source\repos\IST-Projekat2\Host\obj\Debug\Host.pdb
